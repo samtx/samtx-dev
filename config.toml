@@ -9,6 +9,8 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
+googleAnalytics = "UA-65944202-1"
+
 pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
@@ -19,9 +21,9 @@ disqusShortname = "yourdiscussshortname"
     author = "Sam Friedman"
     description = "Sam Friedman's personal website"
     keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
+    info = "Ph.D. Student in Uncertainty Quantification"
     avatarurl = "images/avatar.jpg"
-    footercontent = "Footer content text"
+    # footercontent = "Footer content text"
 
     dateformat = "January 2, 2006"
 
@@ -51,10 +53,10 @@ disqusShortname = "yourdiscussshortname"
     custom_js = []
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
-[params.fathomAnalytics]
-    siteID = "ABCDE"
-    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-    serverURL = "analytics.example.com"
+# [params.fathomAnalytics]
+#     siteID = "UA-65944202-1"
+#     # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+#     serverURL = "analytics.google.com"
 
 [taxonomies]
   category = "categories"
