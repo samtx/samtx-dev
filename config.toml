@@ -1,4 +1,4 @@
-baseurl = "http://samtx.io"
+baseurl = "https://www.samtx.io"
 title = "Sam Friedman"
 
 theme = "hugo-coder"
