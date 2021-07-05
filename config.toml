@@ -1,4 +1,4 @@
-baseurl = "https://www.samtx.io"
+baseurl = "https://www.samtx.dev"
 title = "Sam Friedman"
 
 theme = "hugo-coder"
@@ -9,7 +9,7 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
-googleAnalytics = "UA-65944202-1"
+# googleAnalytics = "UA-65944202-1"
 
 pygmentsstyle = "b2"
 pygmentscodefences = true
@@ -21,7 +21,7 @@ disqusShortname = "yourdiscussshortname"
     author = "Sam Friedman"
     description = "Sam Friedman's personal website"
     keywords = "blog,developer,personal"
-    info = "Ph.D. Student in Uncertainty Quantification"
+    info = "Ph.D. Student researching Uncertainty Quantification"
     avatarurl = "images/avatar.jpg"
     # footercontent = "Footer content text"
 
@@ -63,6 +63,10 @@ disqusShortname = "yourdiscussshortname"
   series = "series"
   tag = "tags"
 
+[params.plausibleAnalytics]
+  domain = "samtx.dev"
+  serverURL = "plausible.io" # (optionnal) Replace if you use a custom domain
+
 [[params.social]]
     name = "Github"
     icon = "fab fa-github"
@@ -92,7 +96,7 @@ disqusShortname = "yourdiscussshortname"
     name = "RSS"
     icon = "fas fa-rss"
     weight = 6
-    url = "https://samtx.io/index.xml"
+    url = "https://samtx.dev/index.xml"
     rel = "alternate"
     type = "application/rss+xml"
 
