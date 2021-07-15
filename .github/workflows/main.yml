@@ -24,9 +24,12 @@ jobs:
         uses: jakejarvis/hugo-build-action@v0.85.0
         with:
           args: --minify    
-      - name: Deploy with rsync
+      - name: Add SSH key
         run: |
           mkdir ~/.ssh
-          echo "${{ secrets.REMOTE_KEY }}" > ~/.ssh/gh_actions_key
-          chmod 600 ~/.ssh/gh_actions_key
-          rsync -avzrO -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" public/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+          echo "${{ secrets.REMOTE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+      - name: Add known host
+        run: ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+      - name: Deploy with rsync
+        run: rsync -avzr public/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
