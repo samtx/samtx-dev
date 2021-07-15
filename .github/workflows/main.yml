@@ -29,4 +29,4 @@ jobs:
           mkdir ~/.ssh
           echo "${{ secrets.REMOTE_KEY }}" > ~/.ssh/gh_actions_key
           chmod 600 ~/.ssh/gh_actions_key
-          rsync -avzr -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" public/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+          rsync -avzrO -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" public/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
