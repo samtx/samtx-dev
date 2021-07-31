@@ -1,11 +1,12 @@
 ---
 title: "Satellite Pass Predictor"
-date: "2021"
 resources:
 - src: meir_iss.jpg
   title: Jessica Meir ISS
 - src: iss.jpg
-draft: true
+weight: 1
+github_url: https://github.com/samtx/passpredict
+live_site_url: https://passpredict.com
 ---
 
 # Website and Library to Predict Satellite Overpasses
@@ -18,7 +19,7 @@ Here is an image from this directory:
 
 ![Astronaut Jessica Meir on board the ISS](meir_iss.jpg)
 
-{{< img src="meir_iss.jpg" alt="Astronaut Jessica Meir on board the ISS" sizes="620px" >}}
+<!-- {{< img src="meir_iss.jpg" alt="Astronaut Jessica Meir on board the ISS" sizes="620px" >}} -->
 
 And an image from the static root
 
