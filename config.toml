@@ -21,8 +21,11 @@ pygmentscodefencesguesssyntax = true
     author = "Sam Friedman"
     description = "Sam Friedman's personal website"
     keywords = "blog,developer,personal"
-    info = "Ph.D. Student researching Uncertainty Quantification"
-    avatarurl = "images/avatar.jpg"
+    info = [
+        "Ph.D. Student in Uncertainty Quantification",
+        "Scientific Software Developer"
+    ]
+    # avatarurl = "images/avatar.jpg"
     # footercontent = "Footer content text"
 
     dateformat = "January 2, 2006"
@@ -67,11 +70,11 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-github"
     weight = 1
     url = "https://github.com/samtx/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab"
-    weight = 2
-    url = "https://gitlab.com/samtx/"
+# [[params.social]]
+#     name = "Gitlab"
+#     icon = "fab fa-gitlab"
+#     weight = 2
+#     url = "https://gitlab.com/samtx/"
 # [[params.social]]
 #     name = "Twitter"
 #     icon = "fab fa-twitter"
@@ -87,14 +90,15 @@ pygmentscodefencesguesssyntax = true
 #     icon = "fab fa-medium"
 #     weight = 5
 #     url = "https://medium.com/@johndoe"
-[[params.social]]
-    name = "RSS"
-    icon = "fas fa-rss"
-    weight = 6
-    url = "https://samtx.dev/index.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
+# [[params.social]]
+#     name = "RSS"
+#     icon = "fas fa-rss"
+#     weight = 6
+#     url = "https://samtx.dev/index.xml"
+#     rel = "alternate"
+#     type = "application/rss+xml"
 
+staticDir = ['static']
 
 [languages]
     [languages.en]
