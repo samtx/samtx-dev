@@ -1,0 +1,5 @@
+<div class="live-site-link">
+    <i class="fa fa-external-link" aria-hidden="true"></i>
+    {{ $url := urls.Parse . }}
+    <a href={{ printf "%s" . }}>{{ $url.Host }}{{ $url.Path }}</a>
+</div>

@@ -4,8 +4,9 @@ resources:
 - src: iss.jpg
   title: International Space Station
 weight: 1
-github_url: https://github.com/samtx/passpredict
+repo_url: https://github.com/samtx/passpredict
 live_site_url: https://passpredict.com
+draft: false
 ---
 # Website and Library to Predict Satellite Overpasses
 

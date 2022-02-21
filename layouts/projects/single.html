@@ -16,6 +16,8 @@
                 {{ with .Page.Params.Authors }}{{ partial "taxonomy/authors.html" . }}{{ end }}
                 {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
                 {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+                {{ with .Page.Params.repo_url }}{{ partial "repolink.html" . }}{{ end }}
+                {{ with .Page.Params.live_site_url }}{{ partial "livesitelink.html" . }}{{ end }}
             </div>
         </header>
 
