@@ -22,8 +22,14 @@
         </header>
 
         <div>
-            {{ if .Params.featuredImage }}
-            <img src='{{ .Params.featuredImage }}' alt="Featured image" />
+
+            {{ with .Resources.ByType "image" }}
+                {{ range first 1 . }}
+                    {{ $image := .Fill "600x400" }}
+                    <div class="page-featured-image">
+                        <img src='{{ $image.RelPermalink }}' alt="{{ $image.Title }}" />
+                    </div>
+                {{ end }}
             {{ end }}
             {{ .Content }}
         </div>

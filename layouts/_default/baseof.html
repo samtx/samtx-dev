@@ -59,7 +59,9 @@
       {{ end }}
     {{ end }}
 
+    <!-- custom css -->
     {{ range .Site.Params.custom_css }}
+      <!-- custom css range -->
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
