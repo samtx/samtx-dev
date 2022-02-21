@@ -1,7 +1,7 @@
 ---
 title: "Tafelberg Vacation Rental Site API"
 date: 2021-07-05
-weight: 2
+weight: 3
 resources:
     src: tafelberg-homes.jpg
     title: Tafelberg Rental Properties

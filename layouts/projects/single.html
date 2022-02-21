@@ -22,15 +22,14 @@
         </header>
 
         <div>
-
-            {{ with .Resources.ByType "image" }}
+            <!-- {{ with .Resources.ByType "image" }}
                 {{ range first 1 . }}
                     {{ $image := .Fill "600x400" }}
                     <div class="page-featured-image">
                         <img src='{{ $image.RelPermalink }}' alt="{{ $image.Title }}" />
                     </div>
                 {{ end }}
-            {{ end }}
+            {{ end }} -->
             {{ .Content }}
         </div>
 
