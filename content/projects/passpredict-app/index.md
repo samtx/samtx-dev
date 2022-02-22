@@ -13,5 +13,5 @@ I've been developing a Python/CPP library to accompany a website that will show 
 
 The website is live at [passpredict.com](https://passpredict.com).  It is built with a Python backend using Starlette and FastAPI. The frontend is server-rendered with Jinja templates. It uses Postgresql and Redis for data storage and caching. A Caddy server is the reverse proxy for the Starlette application and serves the static files. All of the applications are hosted on a Digital Ocean virtual private server.
 
-Orbit and satellite data is gathered from [Celestrak](https://celestrak.com) three times a day. Overpass prediction is computed with my [passpredict](https://github.com/samtx/orbit-predictor) python library.
+Orbit and satellite data is gathered from [Celestrak](https://celestrak.com) three times a day. Overpass prediction is computed with my [passpredict](https://github.com/samtx/passpredict) python library.
 
